@@ -2,7 +2,7 @@ import java.util.Collection;
 import java.util.Map;
 import java.util.Scanner;
 import inventory.*;
-import product.Product;
+import product.*;
 public class Main {
 
 	public static void main(String [] args){
@@ -52,8 +52,8 @@ public class Main {
 		double price = Double.parseDouble(in.nextLine());
 		System.out.println("Please enter quantity of product: ");
 		int quantity = Integer.parseInt(in.nextLine());
-		////Product newProduct = new Product(name, price, quantity); 
-		return  null;
+		Product newProduct = new Product(name, price, quantity); 
+		return  newProduct;
 	}
 }
 
