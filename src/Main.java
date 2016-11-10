@@ -52,7 +52,7 @@ public class Main {
 		double price = Double.parseDouble(in.nextLine());
 		System.out.println("Please enter quantity of product: ");
 		int quantity = Integer.parseInt(in.nextLine());
-		//Product newProduct = new Product(name, price, quantity); 
+		////Product newProduct = new Product(name, price, quantity); 
 		return  null;
 	}
 }
