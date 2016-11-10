@@ -1,6 +1,6 @@
 package product;
 
-public abstract class Product {
+public class Product {
 	private String nameProduct;
 	private double priceProduct;
 	private int quantityOnHandProduct;
@@ -38,8 +38,10 @@ public abstract class Product {
 	public void addQuantity(int quantity){
 		this.quantityOnHandProduct += quantity;
 	}
+	
 	public String toString() {
-		return "Product{" +
+		String str = getClass().getSimpleName();
+		return str+" {" +
 				"name='" + nameProduct + '\'' +
 				", price=" + priceProduct +
 				", quantity=" + quantityOnHandProduct +
